@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="bg-dark">
+    <div class="container mt-5 p-5 row">
+      <div class="col-4"></div>
+      <div class="calc border bg-light border-dark p-5 w-50 col-4 rounded-2">
+        <!-- DISPLAY -->
+        <div class="container">
+          <input
+            type="text"
+            id="result"
+            class="form-control form-control-lg mb-4 p-3"
+            style="border: 1px solid black"
+          />
+        </div>
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-3">
+              <button type="button" onclick="displayNum(7)" id="seven" class="btn btn-secondary w-100">7</button>
+            </div>
+            <div class="col-3">
+              <button type="button" onclick="displayNum(8)" id="eight" class="btn btn-secondary w-100">8</button>
+            </div>
+            <div class="col-3">
+              <button type="button" onclick="displayNum(9)" id="nine" class="btn btn-secondary w-100">9</button>
+            </div>
+            <div class="col-3">
+              <button type="button" onclick="displayNum('/')" id="div
+              " class="btn btn-primary w-100">&#xF7</button>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-3">
+              <button type="button" onclick="displayNum(4)" id="four" class="btn btn-secondary w-100">4</button>
+            </div>
+            <div class="col-3">
+              <button type="button" onclick="displayNum(5)" id="five" class="btn btn-secondary w-100">5</button>
+            </div>
+            <div class="col-3">
+              <button type="button" onclick="displayNum(6)" id="six" class="btn btn-secondary w-100">6</button>
+            </div>
+            <div class="col-3">
+              <button type="button" onclick="displayNum('*')" id="mul" class="btn btn-primary w-100">&#215</button>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-3">
+              <button type="button" onclick="displayNum(1)" id="one" class="btn btn-secondary w-100">1</button>
+            </div>
+            <div class="col-3">
+              <button type="button" onclick="displayNum(2)" id="two" class="btn btn-secondary w-100">2</button>
+            </div>
+            <div class="col-3">
+              <button type="button" onclick="displayNum(3)" id="three" class="btn btn-secondary w-100">3</button>
+            </div>
+            <div class="col-3">
+              <button type="button" onclick="displayNum('-')" id="min" class="btn btn-primary w-100">-</button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="row mt-3">
+            <div class="col-3">
+              <button type="button" onclick="displayNum(0)" id="zero" class="btn btn-secondary w-100">0</button>
+            </div>
+            <div class="col-3">
+              <button type="button" onclick="displayNum('.')" id="dot" class="btn btn-secondary w-100">.</button>
+            </div>
+            <div class="col-3">
+              <button type="button" onclick="evaluateExpr()" id="equal" class="btn btn-primary w-100">=</button>
+            </div>
+            <div class="col-3">
+              <button type="button" onclick="displayNum('+')" id="add" class="btn btn-primary w-100">+</button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="row mt-3">
+            <div class="col-3">
+              <button type="button" onclick="clearBox()" id="allClear" class="btn btn-warning w-100">AC</button>
+            </div>
+
+            <div class="col-3">
+              <button type="button" onclick="backSpace()" id="backSpace" class="btn btn-danger w-100">&#9003</button>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+      <div class="col-4"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
